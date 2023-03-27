@@ -4,9 +4,11 @@
 <div class="home d-flex">
     <div class="sidebar">
         <div class="header-box">
-            <h1 class="fs-4">
-                <span class="px-2 me-2"><img src="{{ asset('vendor/blade-carbon-icons/grid.svg') }}" width="20" height="20"/></span>
-                Dashboard
+            <h1 class="fs-4 d-flex">
+                <span class="px-2">
+                    <i class="material-icons">forum</i>
+                </span>
+                <span>Dashboard</span>
             </h1>
         </div>
         <ul class="list-unstyled mb-4">

@@ -126,6 +126,12 @@
     min-height: 100vh;
     width: 100%;
 }
+.home .sidebar img,
+.home .sidebar span,
+.home .sidebar a
+{
+    color: #fff;
+}
 
 
 
