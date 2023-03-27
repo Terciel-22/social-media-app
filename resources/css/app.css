@@ -120,20 +120,32 @@
 .home .sidebar
 {
     background: rgb(25,146,212);
+    min-width: 200px;
+    max-width: 200px;
 }
 .home .content 
 {
     min-height: 100vh;
     width: 100%;
 }
-.home .sidebar img,
 .home .sidebar span,
 .home .sidebar a
 {
-    color: #fff;
+    color: #eee;
 }
-
-
+.home .sidebar li
+{
+    transition: all 0.5s;
+}
+.home .sidebar li:hover a,
+.home .sidebar li:hover span{
+    color: #ccc;
+}
+.home .content button {
+    background: none;
+    border: none;
+    color: #555;
+}
 
 
 
@@ -164,6 +176,18 @@
     .auth .row{
         max-width: 420px;
         width: 100%;
+    }
+
+    /* Home */
+    .sidebar {
+        margin-left: -250px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+        transition: all 0.5s;
+    }
+    .sidebar.active {
+        margin-left: 0;
     }
 }
 
