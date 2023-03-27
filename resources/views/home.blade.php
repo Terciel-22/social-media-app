@@ -1,7 +1,30 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="home d-flex">
+    <div class="sidebar">
+        <div class="header-box">
+            <h1 class="fs-4">
+                <span class="px-2 me-2"><img src="{{ asset('vendor/blade-carbon-icons/grid.svg') }}" width="20" height="20"/></span>
+                Dashboard
+            </h1>
+        </div>
+        <ul class="list-unstyled mb-4">
+            <li><a class="text-decoration-none" href="#">Home</a></li>
+            <li><a class="text-decoration-none" href="#">Profile</a></li>
+            <li><a class="text-decoration-none" href="#">Message</a></li>
+            <li><a class="text-decoration-none" href="#">History</a></li>
+            <li><a class="text-decoration-none" href="#">Task</a></li>
+            <li><a class="text-decoration-none" href="#">Communities</a></li>
+        </ul>
+        <ul class="list-unstyled">
+            <li><a class="text-decoration-none" href="#">Settings</a></li>
+            <li><a class="text-decoration-none" href="#">Support</a></li>
+            <li><a class="text-decoration-none" href="#">Privacy</a></li>
+        </ul>
+    </div>
+    <div class="content"></div>
+<div>
     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
         {{ Auth::user()->name }}
     </a>
@@ -34,5 +57,6 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection
